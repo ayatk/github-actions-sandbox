@@ -1,0 +1,2 @@
+apps/go-app1: apps/go-app1/**/*
+apps/go-app2: apps/go-app2/**/*
