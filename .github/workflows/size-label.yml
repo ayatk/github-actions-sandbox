@@ -1,0 +1,15 @@
+name: size-label
+on: pull_request
+jobs:
+  size-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: size-label
+        uses: "pascalgn/size-label-action@28e56f8921268407ec75e933affbcd456d92b45d"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          IGNORED: |
+            Gemfile.lock
+            Pipfile.lock
+            yarn.lock
+            go.sum
