@@ -9,7 +9,7 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           IGNORED: |
-            Gemfile.lock
-            Pipfile.lock
-            yarn.lock
-            go.sum
+            **/Gemfile.lock
+            **/Pipfile.lock
+            **/yarn.lock
+            **/go.sum
